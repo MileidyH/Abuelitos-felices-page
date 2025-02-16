@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Medicamentos</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      <!-- header section start -->
+      <div class="header_section">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="logo"><a href="index.html"><img src="images/footer-logo.png"></a></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                  <!--<li class="nav-item">
+                      <a class="nav-link" href="actividades.html">Actividades</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="rondas.html">Rondas</a>
+                   </li>-->
+                   <li class="nav-item">
+                    <a class="nav-link" href="Medicamentos.html">Volver</a>
+                   </li>
+                   <li class="nav-item">
+                     <!-- <a class="nav-link" href="login.html">Empleados</a>-->
+                   </li>
+                 </ul>
+            </div>
+         </nav>
+      </div>
+      <!-- header section end -->
+      <!-- news section start -->
+      <div class="news_section layout_padding">
+         <div class="container">
+            <h1 class="health_taital">Bienvenido a administración de medicamentos por  Paciente:</h1>
+            <h2><b>Ramón Ramírez CC: 58963258</b></h2>
+            <h3>Lunes</h3>
+            <!--<style>
+                   
+               table {
+                   border-collapse: collapse;
+                   width: 100%;
+               }
+               th, td {
+                   border: 1px solid black;
+                   padding: 8px;
+                   text-align: center;
+               }
+           </style>-->
+               <table class="table-primary container" style="margin: 12px;">
+             <tr>
+               <th>Medicamento</th>
+               <th>Dosis</th>
+               <th>Hora</th>
+               <th>Estado</th>
+               <th>Ejecutar</th>
+             </tr>
+             <tr>
+              
+               <td>Quetiapina</td>
+               <td>100 mg</td>
+               <td>6:00 am</td>
+               <td id="1estado" style="color:red">Pendiente</td>
+                    <td><input value="Finalizar" id="1btnFinalizar" target="_parent" onclick="enviar0()" type="button"
+                            class="boton-login btn-primary" /></td>
+             <tr>
+               
+               <td>Acetaminofen</td>
+               <td> 500 mg </td>
+               <td> 8:00 am </td>
+               <td id="estado2" style="color:red">Pendiente</td>
+                    <td><input value="Finalizar" id="btnFinalizar2" target="_parent" onclick="enviar2()" type="button"
+                            class="boton-login btn-primary" /></td>
+             </tr>
+            
+             <tr>
+              
+               <td>Insulina cutanea</td>
+               <td>10 ml</td>
+               <td>6:00 am</td>
+               <td id="estado3" style="color:red">Pendiente</td>
+               <td><input value="Finalizar" id="btnFinalizar3" target="_parent" onclick="enviar3()" type="button"
+                       class="boton-login btn-primary" /></td>
+             </tr>
+             <tr>
+              
+               <td>Quetiapina</td>
+               <td>50 gm</td>
+               <td>7:00 pm</td>
+               
+               <td id="estado4" style="color:red">Pendiente</td>
+               <td><input value="Finalizar" id="btnFinalizar4" target="_parent" onclick="enviar4()" type="button"
+                       class="boton-login btn-primary" /></td>
+             </tr>
+            
+             
+           
+           </table>
+           <h3>Martes</h3>
+           <!--<style>
+                  
+              table {
+                  border-collapse: collapse;
+                  width: 100%;
+              }
+              th, td {
+                  border: 1px solid black;
+                  padding: 8px;
+                  text-align: center;
+              }
+          </style>-->
+              <table class="table-primary container" style="margin: 12px;">
+            <tr>
+              <th>Medicamento</th>
+              <th>Dosis</th>
+              <th>Hora</th>
+              <th>Estado</th>
+              <th>Ejecutar</th>
+            </tr>
+            <tr>
+             
+              <td>Quetiapina</td>
+              <td>100 mg</td>
+              <td>6:00 am</td>
+              <td id="1estado" style="color:red">Pendiente</td>
+                   <td><input value="Finalizar" id="1btnFinalizar" target="_parent" onclick="enviar0()" type="button"
+                           class="boton-login btn-primary" /></td>
+            <tr>
+              
+              <td>Acetaminofen</td>
+              <td> 500 mg </td>
+              <td> 8:00 am </td>
+              <td id="estado2" style="color:red">Pendiente</td>
+                   <td><input value="Finalizar" id="btnFinalizar2" target="_parent" onclick="enviar2()" type="button"
+                           class="boton-login btn-primary" /></td>
+            </tr>
+           
+            <tr>
+             
+              <td>Insulina cutanea</td>
+              <td>10 ml</td>
+              <td>6:00 am</td>
+              <td id="estado3" style="color:red">Pendiente</td>
+              <td><input value="Finalizar" id="btnFinalizar3" target="_parent" onclick="enviar3()" type="button"
+                      class="boton-login btn-primary" /></td>
+            </tr>
+            <tr>
+             
+              <td>Quetiapina</td>
+              <td>50 gm</td>
+              <td>7:00 pm</td>
+              
+              <td id="estado4" style="color:red">Pendiente</td>
+              <td><input value="Finalizar" id="btnFinalizar4" target="_parent" onclick="enviar4()" type="button"
+                      class="boton-login btn-primary" /></td>
+            </tr>
+           
+            
+          
+          </table>
+          <h3>Miércoles</h3>
+          <!--<style>
+                 
+             table {
+                 border-collapse: collapse;
+                 width: 100%;
+             }
+             th, td {
+                 border: 1px solid black;
+                 padding: 8px;
+                 text-align: center;
+             }
+         </style>-->
+             <table class="table-primary container" style="margin: 12px;">
+           <tr>
+             <th>Medicamento</th>
+             <th>Dosis</th>
+             <th>Hora</th>
+             <th>Estado</th>
+             <th>Ejecutar</th>
+           </tr>
+           <tr>
+            
+             <td>Quetiapina</td>
+             <td>100 mg</td>
+             <td>6:00 am</td>
+             <td id="1estado" style="color:red">Pendiente</td>
+                  <td><input value="Finalizar" id="1btnFinalizar" target="_parent" onclick="enviar0()" type="button"
+                          class="boton-login btn-primary" /></td>
+           <tr>
+             
+             <td>Acetaminofen</td>
+             <td> 500 mg </td>
+             <td> 8:00 am </td>
+             <td id="estado2" style="color:red">Pendiente</td>
+                  <td><input value="Finalizar" id="btnFinalizar2" target="_parent" onclick="enviar2()" type="button"
+                          class="boton-login btn-primary" /></td>
+           </tr>
+          
+           <tr>
+            
+             <td>Insulina cutanea</td>
+             <td>10 ml</td>
+             <td>6:00 am</td>
+             <td id="estado3" style="color:red">Pendiente</td>
+             <td><input value="Finalizar" id="btnFinalizar3" target="_parent" onclick="enviar3()" type="button"
+                     class="boton-login btn-primary" /></td>
+           </tr>
+           <tr>
+            
+             <td>Quetiapina</td>
+             <td>50 gm</td>
+             <td>7:00 pm</td>
+             
+             <td id="estado4" style="color:red">Pendiente</td>
+             <td><input value="Finalizar" id="btnFinalizar4" target="_parent" onclick="enviar4()" type="button"
+                     class="boton-login btn-primary" /></td>
+           </tr>
+          
+           
+         
+         </table>
+         <h3>Jueves</h3>
+         <!--<style>
+                
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+        </style>-->
+            <table class="table-primary container" style="margin: 12px;">
+          <tr>
+            <th>Medicamento</th>
+            <th>Dosis</th>
+            <th>Hora</th>
+            <th>Estado</th>
+            <th>Ejecutar</th>
+          </tr>
+          <tr>
+           
+            <td>Quetiapina</td>
+            <td>100 mg</td>
+            <td>6:00 am</td>
+            <td id="1estado" style="color:red">Pendiente</td>
+                 <td><input value="Finalizar" id="1btnFinalizar" target="_parent" onclick="enviar0()" type="button"
+                         class="boton-login btn-primary" /></td>
+          <tr>
+            
+            <td>Acetaminofen</td>
+            <td> 500 mg </td>
+            <td> 8:00 am </td>
+            <td id="estado2" style="color:red">Pendiente</td>
+                 <td><input value="Finalizar" id="btnFinalizar2" target="_parent" onclick="enviar2()" type="button"
+                         class="boton-login btn-primary" /></td>
+          </tr>
+         
+          <tr>
+           
+            <td>Insulina cutanea</td>
+            <td>10 ml</td>
+            <td>6:00 am</td>
+            <td id="estado3" style="color:red">Pendiente</td>
+            <td><input value="Finalizar" id="btnFinalizar3" target="_parent" onclick="enviar3()" type="button"
+                    class="boton-login btn-primary" /></td>
+          </tr>
+          <tr>
+           
+            <td>Quetiapina</td>
+            <td>50 gm</td>
+            <td>7:00 pm</td>
+            
+            <td id="estado4" style="color:red">Pendiente</td>
+            <td><input value="Finalizar" id="btnFinalizar4" target="_parent" onclick="enviar4()" type="button"
+                    class="boton-login btn-primary" /></td>
+          </tr>
+         
+          
+        
+        </table>
+        <h3>Viernes</h3>
+        <!--<style>
+               
+           table {
+               border-collapse: collapse;
+               width: 100%;
+           }
+           th, td {
+               border: 1px solid black;
+               padding: 8px;
+               text-align: center;
+           }
+       </style>-->
+           <table class="table-primary container" style="margin: 12px;">
+         <tr>
+           <th>Medicamento</th>
+           <th>Dosis</th>
+           <th>Hora</th>
+           <th>Estado</th>
+           <th>Ejecutar</th>
+         </tr>
+         <tr>
+          
+           <td>Quetiapina</td>
+           <td>100 mg</td>
+           <td>6:00 am</td>
+           <td id="1estado" style="color:red">Pendiente</td>
+                <td><input value="Finalizar" id="1btnFinalizar" target="_parent" onclick="enviar0()" type="button"
+                        class="boton-login btn-primary" /></td>
+         <tr>
+           
+           <td>Acetaminofen</td>
+           <td> 500 mg </td>
+           <td> 8:00 am </td>
+           <td id="estado2" style="color:red">Pendiente</td>
+                <td><input value="Finalizar" id="btnFinalizar2" target="_parent" onclick="enviar2()" type="button"
+                        class="boton-login btn-primary" /></td>
+         </tr>
+        
+         <tr>
+          
+           <td>Insulina cutanea</td>
+           <td>10 ml</td>
+           <td>6:00 am</td>
+           <td id="estado3" style="color:red">Pendiente</td>
+           <td><input value="Finalizar" id="btnFinalizar3" target="_parent" onclick="enviar3()" type="button"
+                   class="boton-login btn-primary" /></td>
+         </tr>
+         <tr>
+          
+           <td>Quetiapina</td>
+           <td>50 gm</td>
+           <td>7:00 pm</td>
+           
+           <td id="estado4" style="color:red">Pendiente</td>
+           <td><input value="Finalizar" id="btnFinalizar4" target="_parent" onclick="enviar4()" type="button"
+                   class="boton-login btn-primary" /></td>
+         </tr>
+        
+         
+       
+       </table>
+       <h3>Sábado</h3>
+       <!--<style>
+              
+          table {
+              border-collapse: collapse;
+              width: 100%;
+          }
+          th, td {
+              border: 1px solid black;
+              padding: 8px;
+              text-align: center;
+          }
+      </style>-->
+          <table class="table-primary container" style="margin: 12px;">
+        <tr>
+          <th>Medicamento</th>
+          <th>Dosis</th>
+          <th>Hora</th>
+          <th>Estado</th>
+          <th>Ejecutar</th>
+        </tr>
+        <tr>
+         
+          <td>Quetiapina</td>
+          <td>100 mg</td>
+          <td>6:00 am</td>
+          <td id="1estado" style="color:red">Pendiente</td>
+               <td><input value="Finalizar" id="1btnFinalizar" target="_parent" onclick="enviar0()" type="button"
+                       class="boton-login btn-primary" /></td>
+        <tr>
+          
+          <td>Acetaminofen</td>
+          <td> 500 mg </td>
+          <td> 8:00 am </td>
+          <td id="estado2" style="color:red">Pendiente</td>
+               <td><input value="Finalizar" id="btnFinalizar2" target="_parent" onclick="enviar2()" type="button"
+                       class="boton-login btn-primary" /></td>
+        </tr>
+       
+        <tr>
+         
+          <td>Insulina cutanea</td>
+          <td>10 ml</td>
+          <td>6:00 am</td>
+          <td id="estado3" style="color:red">Pendiente</td>
+          <td><input value="Finalizar" id="btnFinalizar3" target="_parent" onclick="enviar3()" type="button"
+                  class="boton-login btn-primary" /></td>
+        </tr>
+        <tr>
+         
+          <td>Quetiapina</td>
+          <td>50 gm</td>
+          <td>7:00 pm</td>
+          
+          <td id="estado4" style="color:red">Pendiente</td>
+          <td><input value="Finalizar" id="btnFinalizar4" target="_parent" onclick="enviar4()" type="button"
+                  class="boton-login btn-primary" /></td>
+        </tr>
+       
+        
+      
+      </table>
+      <h3>Domingo</h3>
+      <!--<style>
+             
+         table {
+             border-collapse: collapse;
+             width: 100%;
+         }
+         th, td {
+             border: 1px solid black;
+             padding: 8px;
+             text-align: center;
+         }
+     </style>-->
+         <table class="table-primary container" style="margin: 12px;">
+       <tr>
+         <th>Medicamento</th>
+         <th>Dosis</th>
+         <th>Hora</th>
+         <th>Estado</th>
+         <th>Ejecutar</th>
+       </tr>
+       <tr>
+        
+         <td>Quetiapina</td>
+         <td>100 mg</td>
+         <td>6:00 am</td>
+         <td id="1estado" style="color:red">Pendiente</td>
+              <td><input value="Finalizar" id="1btnFinalizar" target="_parent" onclick="enviar0()" type="button"
+                      class="boton-login btn-primary" /></td>
+       <tr>
+         
+         <td>Acetaminofen</td>
+         <td> 500 mg </td>
+         <td> 8:00 am </td>
+         <td id="estado2" style="color:red">Pendiente</td>
+              <td><input value="Finalizar" id="btnFinalizar2" target="_parent" onclick="enviar2()" type="button"
+                      class="boton-login btn-primary" /></td>
+       </tr>
+      
+       <tr>
+        
+         <td>Insulina cutanea</td>
+         <td>10 ml</td>
+         <td>6:00 am</td>
+         <td id="estado3" style="color:red">Pendiente</td>
+         <td><input value="Finalizar" id="btnFinalizar3" target="_parent" onclick="enviar3()" type="button"
+                 class="boton-login btn-primary" /></td>
+       </tr>
+       <tr>
+        
+         <td>Quetiapina</td>
+         <td>50 gm</td>
+         <td>7:00 pm</td>
+         
+         <td id="estado4" style="color:red">Pendiente</td>
+         <td><input value="Finalizar" id="btnFinalizar4" target="_parent" onclick="enviar4()" type="button"
+                 class="boton-login btn-primary" /></td>
+       </tr>
+      
+            
+          
+          </table>
+          <!--  <div class="news_section_2 layout_padding">
+               <div class="row">
+                  <div class="col-lg-4 col-sm-6">
+                     <div class="box_main">
+                        <div class="icon_1"><img src="images/icon-2.png"></div>
+                        <h4 class="daily_text">Daily care experts</h4>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                     <div class="box_main active">
+                        <div class="icon_1"><img src="images/icon-3.png"></div>
+                        <h4 class="daily_text_1">Available 24/7</h4>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                     <div class="box_main">
+                        <div class="icon_1"><img src="images/icon-4.png"></div>
+                        <h4 class="daily_text_1">Balanced care</h4>
+                     </div>
+                  </div>
+               </div>
+            </div>-->
+            <div class="getquote_bt"><a onclick="finalizar1()">Enviar <span><img src="images/right-arrow.png"></span></a>
+            </div>
+         </div>
+      </div>
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">2024, todos los derechos reservados <a href="https://html.design"> </a></p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script src="./js/medicamentos.js"> </script>
+   </body>
+</html>
